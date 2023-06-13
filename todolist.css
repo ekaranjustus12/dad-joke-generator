@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: transparent;
+    padding: 10px;
+}
+.To do{
+    width: 100%;
+    max-width: 500px;
+    margin: 70px auto 20px;
+    padding: 10px 20px;
+}
+.To do h2{
+    display: flex;
+    font-size: 25px;
+    font-weight: 300;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 10px 15px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: grey;
+    border-radius: 28px;
+    margin: 20px 30px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    background: orange;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: blue;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 35px;
+    color: blue;
+    font-size: 20px;
+}
+ul li span:hover{
+    background: grey;
+
+}
